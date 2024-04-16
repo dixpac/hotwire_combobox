@@ -248,7 +248,8 @@ class HotwireCombobox::Component
     end
 
     def association_exists?
-      form_object&.class&.reflect_on_association(association_name).present?
+      form_object.respond_to?(association_name)
+      # form_object&.class&.reflect_on_association(association_name).present?
     end
 
     def form_object
