@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "form_object", to: "comboboxes#form_object"
   get "plain", to: "comboboxes#plain"
   get "open", to: "comboboxes#open"
   get "html_options", to: "comboboxes#html_options"

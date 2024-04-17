@@ -1,6 +1,9 @@
 class ComboboxesController < ApplicationController
   before_action :set_states, except: %i[ new_options grouped_options ]
 
+  def form_object
+  end
+
   def plain
   end
 
